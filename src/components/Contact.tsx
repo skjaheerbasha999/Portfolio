@@ -14,7 +14,7 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
   const [message, setMessage] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) {
       onShowToast("Please fill in all required fields.", "error");
@@ -23,9 +23,21 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
 
     setIsSubmitting(true);
 
-    // Mock API call
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message.');
+      }
+
       onShowToast("Message sent successfully! Thank you.", "success");
       
       // Trigger canvas-confetti blast
@@ -41,7 +53,12 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
       setEmail('');
       setSubject('');
       setMessage('');
-    }, 1800);
+    } catch (error: any) {
+      console.error('Error submitting contact form:', error);
+      onShowToast(error.message || "Something went wrong. Please try again.", "error");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
