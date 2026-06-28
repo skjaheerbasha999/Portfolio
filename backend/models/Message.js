@@ -17,6 +17,10 @@ const messageSchema = new mongoose.Schema({
     required: [true, 'Message is required'],
     trim: true,
   },
+  subject: {
+    type: String,
+    trim: true,
+  },
   createdAt: {
     type: Date,
     default: Date.now,

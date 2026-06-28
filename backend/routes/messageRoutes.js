@@ -6,7 +6,7 @@ const Message = require('../models/Message');
 // @desc    Insert a new message document
 router.post('/', async (req, res) => {
   try {
-    const { name, email, message } = req.body;
+    const { name, email, subject, message } = req.body;
 
     if (!name || !email || !message) {
       return res.status(400).json({ error: 'All fields (name, email, message) are required' });
@@ -15,6 +15,7 @@ router.post('/', async (req, res) => {
     const newMessage = new Message({
       name,
       email,
+      subject,
       message,
     });
 
