@@ -107,7 +107,7 @@ export const Hero: React.FC = () => {
               <span>CodeChef 2⭐</span>
             </div>
             <div style={{ ...badgeCardStyle, borderColor: 'rgba(59, 130, 246, 0.25)', color: '#3b82f6', backgroundColor: 'rgba(59, 130, 246, 0.08)' }}>
-              <span>Codeforces Rating 1011</span>
+              <span>Codeforces Rating 1036</span>
             </div>
             <div style={{ ...badgeCardStyle, borderColor: 'rgba(234, 88, 12, 0.25)', color: '#ea580c', backgroundColor: 'rgba(234, 88, 12, 0.08)' }}>
               <span>Oracle AI Foundations Certified</span>

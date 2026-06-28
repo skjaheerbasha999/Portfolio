@@ -162,7 +162,7 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
                 </svg>
               </a>
               <a 
-                href="https://leetcode.com/u/skjaheerbasha999/" 
+                href="https://leetcode.com/u/JaheerBasha999/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 style={{ ...socialLinkStyle, color: '#ffa116' }}

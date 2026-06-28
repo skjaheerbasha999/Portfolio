@@ -12,7 +12,7 @@ export const Skills: React.FC = () => {
     {
       title: "Competitive Programming",
       icon: <Trophy size={22} style={{ color: '#f59e0b' }} />,
-      skills: ["1400+ Problems Solved", "Codeforces Rating (1011)", "CodeChef 2 Star (Peak 1465)", "LeetCode (400+ Solved)"]
+      skills: ["1400+ Problems Solved", "Codeforces Rating (1036)", "CodeChef 2 Star (Peak 1465)", "LeetCode (400+ Solved)"]
     },
     {
       title: "Web Development",

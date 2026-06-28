@@ -110,10 +110,10 @@ export const Stats: React.FC = () => {
     },
     {
       icon: <BarChart2 size={24} />,
-      value: 1011,
+      value: 1036,
       suffix: "",
       label: "Codeforces Rating",
-      sublabel: "Specialist Candidate in rated rounds",
+      sublabel: "Active profile in rated rounds",
       color: "#6366f1", // Indigo
       delay: 0.24
     },

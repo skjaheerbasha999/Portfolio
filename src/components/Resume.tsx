@@ -5,7 +5,7 @@ import { FileText, Download, Eye, Award, Zap, Star, Code, Globe, Briefcase } fro
 export const Resume: React.FC = () => {
   const highlights = [
     { text: "1400+ Problems Solved", icon: <Award size={18} />, color: '#10b981' },
-    { text: "Codeforces Rating 1011", icon: <Zap size={18} />, color: '#3b82f6' },
+    { text: "Codeforces Rating 1036", icon: <Zap size={18} />, color: '#3b82f6' },
     { text: "CodeChef 2 Star", icon: <Star size={18} />, color: '#f59e0b' },
     { text: "400+ LeetCode Problems", icon: <Code size={18} />, color: '#ec4899' },
     { text: "Full Stack Developer", icon: <Globe size={18} />, color: '#6366f1' },

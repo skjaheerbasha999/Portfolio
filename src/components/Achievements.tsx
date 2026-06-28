@@ -33,7 +33,7 @@ export const Achievements: React.FC = () => {
       icon: <Zap size={24} />,
       title: "Codeforces Tier",
       subtitle: "Active rating achievement in division rounds.",
-      metric: "1011 Max Rating",
+      metric: "1036 Rating",
       color: "#3b82f6", // Blue
       bgGlow: "rgba(59, 130, 246, 0.15)"
     },

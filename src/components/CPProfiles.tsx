@@ -49,9 +49,9 @@ export const CPProfiles: React.FC = () => {
   const platforms: CPPlatform[] = [
     {
       name: "Codeforces",
-      rank: "Pupil Candidate",
+      rank: "Newbie Coder",
       ratingLabel: "Current Rating",
-      ratingValue: "1011",
+      ratingValue: "1036",
       color: "#3b82f6", // Blue
       url: "https://codeforces.com/profile/skjaheerbasha999",
       focus: "Algorithmic Contests"
@@ -62,7 +62,7 @@ export const CPProfiles: React.FC = () => {
       ratingLabel: "Global Tier",
       ratingValue: "Top 12%",
       color: "#f59e0b", // Orange
-      url: "https://leetcode.com/u/skjaheerbasha999/",
+      url: "https://leetcode.com/u/JaheerBasha999/",
       focus: "Interview Preparation"
     },
     {
@@ -71,7 +71,7 @@ export const CPProfiles: React.FC = () => {
       ratingLabel: "Peak Rating",
       ratingValue: "1465",
       color: "#b45309", // Brown
-      url: "https://www.codechef.com/users/jaheer_999",
+      url: "https://www.codechef.com/users/jaheer_18",
       focus: "Speed Programming"
     },
     {
@@ -96,7 +96,7 @@ export const CPProfiles: React.FC = () => {
     },
     {
       label: "Codeforces Rating",
-      target: 1011,
+      target: 1036,
       suffix: "",
       color: "#3b82f6",
       icon: <Zap size={20} />

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, Layers, CheckCircle } from 'lucide-react';
 import medsyncImg from '../assets/medsync.png';
-import cgpacalculatorImg from '../assets/cgpacalculator.png';
+import s2enhanceImg from '../assets/s2enhance.png';
 
 interface Project {
   id: string;
@@ -33,26 +33,26 @@ export const Projects: React.FC = () => {
         'Responsive Dashboard: Clear analytics showing daily intake progress.',
         'Team Project: Developed collaboratively for HackSprint 2025.'
       ],
-      github: 'https://github.com/skjaheerbasha999',
+      github: 'https://github.com/skjaheerbasha999/Imbatido.git',
       live: 'https://medysync.vercel.app/',
       color: '#10b981', // Emerald
       image: medsyncImg
     },
     {
-      id: 'proj-cgpa',
-      title: 'CGPA Calculator',
-      category: 'cpp',
-      tags: ['C++', 'OOP', 'Console CLI'],
-      description: 'Console-based application that automates semester-wise GPA and CGPA calculations.',
+      id: 'proj-s2enhance',
+      title: 'S2 Enhance System',
+      category: 'web',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'MongoDB'],
+      description: 'A student productivity platform with Education, Health, Time Management, and Dashboard modules.',
       features: [
-        'Instant GPA Calculation: Input course grades and obtain instant GPA summaries.',
-        'Multi-Subject Support: Flexible entry for wide arrays of courses.',
-        'Grade Point Automation: Automates mapping grades to core point equivalents.',
-        'Accurate Academic Tracking: Keeps exact record of target semester goals.'
+        'Modular Panels: Educational, health, scheduling, and custom dashboard components.',
+        'Key Features: Course recommendations, skill tracking, exam progress, and health metrics calculations.',
+        'Secure Backend: REST APIs to manage users, tasks, progress, and dashboard records in MongoDB.',
+        'Productivity Dashboard: Centralized view with progress graphs, streak tracking, and user notifications.'
       ],
-      github: 'https://github.com/skjaheerbasha999',
+      github: 'https://github.com/skjaheerbasha999/c-Enhance-System.git',
       color: '#6366f1', // Indigo
-      image: cgpacalculatorImg
+      image: s2enhanceImg
     }
   ];
 
